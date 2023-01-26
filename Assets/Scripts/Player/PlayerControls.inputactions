@@ -1,0 +1,243 @@
+{
+    "name": "PlayerControls",
+    "maps": [
+        {
+            "name": "Player Movement",
+            "id": "1318a4f1-4e81-4856-9e77-23712d74dc53",
+            "actions": [
+                {
+                    "name": "Movement",
+                    "type": "PassThrough",
+                    "id": "310b78a3-1b3b-452e-acff-470388020c17",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Camera",
+                    "type": "PassThrough",
+                    "id": "eb87b566-3c8d-4bb5-820f-7211398d8d29",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "WASD",
+                    "id": "80e1be06-8dbd-42cc-8286-785370d65520",
+                    "path": "2DVector(mode=2)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "a0cc66a4-33bf-4502-be88-6bb71ab71d23",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "b2b783d2-7a97-4fac-bde2-ab0c84ae16ea",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "73bac10f-e93f-4643-b3c5-0f6696f1deb5",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "f31fb609-04cb-4e92-8df8-37b15c4b3613",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "144d5889-0d4e-4ed7-8152-0811a9db96eb",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "StickDeadzone",
+                    "groups": "",
+                    "action": "Camera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "66e3b027-a7d2-41ee-97fe-4263149e8d03",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "NormalizeVector2",
+                    "groups": "",
+                    "action": "Camera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Player Actions",
+            "id": "ce2770b7-d498-4c57-9d33-d44804d91ff2",
+            "actions": [
+                {
+                    "name": "Roll",
+                    "type": "Button",
+                    "id": "b8734f85-ba73-4700-8830-3d9b723e4bf9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RB",
+                    "type": "Button",
+                    "id": "c2eeee14-8bf3-403c-9e43-df5d86b5c2c5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RT",
+                    "type": "Button",
+                    "id": "e995641c-812e-48ee-a184-47a9a2e7018a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Crouch",
+                    "type": "Button",
+                    "id": "7a08dbb1-0020-4f3d-a7ae-3afabd8f20ba",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Escape",
+                    "type": "Button",
+                    "id": "603a3401-38fe-4337-a594-ae07fea27346",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "952e6f83-8826-49f8-afcc-cef3fede24e3",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "217d2acd-a007-4b67-8e07-993442e26be3",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6ffc330a-d440-4a76-9d8c-c12e414c5b37",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RB",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d0d5adef-ca7e-421e-9c43-be43bddc65d0",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RT",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8bc48887-af5e-4609-bdc4-af370881ca83",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Crouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0b2be9b9-4c75-4766-9612-7c41143cd06f",
+                    "path": "<Keyboard>/leftCtrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Crouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c7bbcd5e-ec16-44b4-a7a1-9cb9b1e832c7",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Escape",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "adfee10b-d836-4216-8784-d48a2335e640",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Escape",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
